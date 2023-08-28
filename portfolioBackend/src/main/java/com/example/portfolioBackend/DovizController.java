@@ -1,5 +1,6 @@
 package com.example.portfolioBackend;
 
+import com.example.portfolioBackend.DovizService;
 
 import com.example.portfolioBackend.model.Doviz;
 import lombok.AllArgsConstructor;
@@ -19,8 +20,8 @@ public class DovizController {
        return dovizService.getAllDoviz();
     }
 
-    @PostMapping
+    /*@PostMapping
     public void addToPortfolio(@RequestBody Doviz request) {
         dovizService.addToPortfolio(request);
-    }
+    }*/
 }

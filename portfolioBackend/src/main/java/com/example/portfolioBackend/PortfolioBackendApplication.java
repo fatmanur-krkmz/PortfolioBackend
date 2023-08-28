@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.time.LocalDateTime;
+
 
 @SpringBootApplication
 public class PortfolioBackendApplication {
@@ -23,7 +23,7 @@ public class PortfolioBackendApplication {
             Doviz doviz=new Doviz(
 					DovizTuru.DOLAR,
 					25.00,
-					"25/08/2022",
+					"28/08/2022",
 					12);
 			repository.insert(doviz);
 		};
