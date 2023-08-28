@@ -23,7 +23,7 @@ public class PortfolioBackendApplication {
             Doviz doviz=new Doviz(
 					DovizTuru.DOLAR,
 					25.00,
-					"25/08/2023",
+					"25/08/2022",
 					12);
 			repository.insert(doviz);
 		};
