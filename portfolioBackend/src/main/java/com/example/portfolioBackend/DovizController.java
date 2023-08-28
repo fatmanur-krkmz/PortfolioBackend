@@ -20,8 +20,8 @@ public class DovizController {
        return dovizService.getAllDoviz();
     }
 
-    /*@PostMapping
+    @PostMapping
     public void addToPortfolio(@RequestBody Doviz request) {
         dovizService.addToPortfolio(request);
-    }*/
+    }
 }

@@ -20,12 +20,13 @@ public class PortfolioBackendApplication {
 	@Bean
 	CommandLineRunner runner(DovizRepository repository){
 		return args -> {
-            Doviz doviz=new Doviz(
+          /*  Doviz doviz=new Doviz(
 					DovizTuru.DOLAR,
 					25.00,
 					"28/08/2022",
 					12);
 			repository.insert(doviz);
+		};*/
 		};
 	}
 

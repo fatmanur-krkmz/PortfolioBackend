@@ -17,7 +17,7 @@ public class DovizService {
     }
 
     public void addToPortfolio(Doviz request) {
-        dovizRepository.insert(request);
+        dovizRepository.save(request);
     }
 
 }
