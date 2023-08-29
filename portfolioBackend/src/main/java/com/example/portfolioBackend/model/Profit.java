@@ -9,6 +9,7 @@ public class Profit {
     @Id
     private String id;
     private double profit;
+    private DovizTuru profitType;
 
 
 public String getId() {
@@ -19,10 +20,19 @@ public void setId(String id) {
         this.id = id;
 }
 
-public Profit( double profit ) {
+public Profit( DovizTuru profitType,double profit ) {//DovizTuru enum olan
    
     this.profit=profit;
+    this.profitType=profitType;
    
+}
+
+public DovizTuru getProfitType() {
+    return profitType;
+}
+
+public void setProfitType(DovizTuru profitType) {
+    this.profitType = profitType;
 }
 public double getProfit() {
     return profit;
