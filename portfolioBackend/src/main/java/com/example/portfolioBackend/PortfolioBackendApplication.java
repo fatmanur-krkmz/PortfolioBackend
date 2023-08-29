@@ -1,10 +1,12 @@
 package com.example.portfolioBackend;
 
-import com.example.portfolioBackend.model.Doviz;
-import com.example.portfolioBackend.model.DovizTuru;
-import com.example.portfolioBackend.model.Financial;
+//import com.example.portfolioBackend.model.Doviz;
+//import com.example.portfolioBackend.model.DovizTuru;
+//import com.example.portfolioBackend.model.Financial;
+//import com.example.portfolioBackend.model.Profit;
 import com.example.portfolioBackend.repository.DovizRepository;
-import com.example.portfolioBackend.repository.FinancialRepository;
+//import com.example.portfolioBackend.repository.FinancialRepository;
+import com.example.portfolioBackend.repository.ProfitRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,6 +23,12 @@ public class PortfolioBackendApplication {
 
 	@Bean
 	CommandLineRunner runner(DovizRepository repository){
+		return args -> {
+
+
+		};
+		}
+	CommandLineRunner runner(ProfitRepository repository){
 		return args -> {
 
 
