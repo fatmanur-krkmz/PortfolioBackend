@@ -32,7 +32,7 @@ public class Doviz {
         this.unitPrice = unitPrice;
         this.created = created;
         this.quantity = quantity;
-        this.status=status;
+
     }
 
 
@@ -67,11 +67,5 @@ public class Doviz {
     public void setQuantity(double quantity) {
         this.quantity = quantity;
     }
-    public String getStatus() {
-        return status;
-    }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
 }
