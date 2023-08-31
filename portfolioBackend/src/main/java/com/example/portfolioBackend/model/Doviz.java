@@ -15,8 +15,7 @@ public class Doviz {
     private double unitPrice;
     private String created;
     private double quantity;
-    private String status;
-    private double profit;
+    
 
     public String getId() {
         return id;
@@ -28,12 +27,12 @@ public class Doviz {
 
 
 
-    public Doviz(DovizTuru dovizTuru, double unitPrice, String created, double quantity, double profit ) {
+    public Doviz(DovizTuru dovizTuru, double unitPrice, String created,double quantity) {
         this.dovizTuru = dovizTuru;
         this.unitPrice = unitPrice;
         this.created = created;
         this.quantity = quantity;
-        this.profit=profit;
+      
        
 
     }
@@ -71,12 +70,6 @@ public class Doviz {
         this.quantity = quantity;
     }
    
-    public double getProfit() {
-        return profit;
-    }
-
-     public void setProfit(double profit) {
-        this.profit = profit;
-    }
+    
 
 }
