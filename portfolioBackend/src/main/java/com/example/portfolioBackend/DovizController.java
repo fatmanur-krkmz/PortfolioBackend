@@ -1,11 +1,7 @@
 package com.example.portfolioBackend;
-
-import com.example.portfolioBackend.DovizService;
-
 import com.example.portfolioBackend.model.Doviz;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController

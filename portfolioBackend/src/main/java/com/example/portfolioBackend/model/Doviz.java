@@ -15,7 +15,7 @@ public class Doviz {
     private double unitPrice;
     private String created;
     private double quantity;
-    private String status;
+
 
     public String getId() {
         return id;
