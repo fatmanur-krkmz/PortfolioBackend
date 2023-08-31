@@ -22,6 +22,12 @@ public class PortfolioBackendApplication {
 
 		};
 		}
+	CommandLineRunner runner(ProfitRepository repository){
+		return args -> {
+
+
+		};
+		}
 	}
 
 

@@ -27,11 +27,13 @@ public class Doviz {
 
 
 
-    public Doviz(DovizTuru dovizTuru, double unitPrice, String created, double quantity) {
+    public Doviz(DovizTuru dovizTuru, double unitPrice, String created, double quantity, double profit ) {
         this.dovizTuru = dovizTuru;
         this.unitPrice = unitPrice;
         this.created = created;
         this.quantity = quantity;
+        this.profit=profit;
+       
 
     }
 
@@ -66,6 +68,14 @@ public class Doviz {
 
     public void setQuantity(double quantity) {
         this.quantity = quantity;
+    }
+   
+    public double getProfit() {
+        return profit;
+    }
+
+     public void setProfit(double profit) {
+        this.profit = profit;
     }
 
 }
