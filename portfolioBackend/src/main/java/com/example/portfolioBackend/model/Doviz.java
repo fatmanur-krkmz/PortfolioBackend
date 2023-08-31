@@ -17,6 +17,7 @@ public class Doviz {
     private double quantity;
     
 
+
     public String getId() {
         return id;
     }
