@@ -1,5 +1,7 @@
-package com.example.portfolioBackend;
+package com.example.portfolioBackend.controller;
 import com.example.portfolioBackend.model.Altin;
+import com.example.portfolioBackend.service.AltinService;
+
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

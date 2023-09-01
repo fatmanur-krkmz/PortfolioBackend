@@ -24,3 +24,5 @@ public class ProfitController {
         profitService.addToPortfolio(request);
     }
 }
+
+

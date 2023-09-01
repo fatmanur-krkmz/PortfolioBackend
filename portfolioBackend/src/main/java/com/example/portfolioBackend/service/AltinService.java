@@ -1,4 +1,4 @@
-package com.example.portfolioBackend;
+package com.example.portfolioBackend.service;
 import com.example.portfolioBackend.model.Altin;
 import com.example.portfolioBackend.repository.AltinRepository;
 import lombok.AllArgsConstructor;

@@ -15,6 +15,7 @@ public class ProfitService {
     }
 
     public void addToPortfolio(Profit request) {
+        profitRepository.deleteAll();
         profitRepository.save(request);
     }
 

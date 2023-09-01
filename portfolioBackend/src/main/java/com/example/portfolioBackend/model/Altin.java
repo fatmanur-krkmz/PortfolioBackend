@@ -11,15 +11,15 @@ public class Altin {
     @Id
     private String id_altin;
     private AltinTuru altinTuru;
-    private double unitPrice_altin;
+    private double unitPrice;
     private String created_altin;
-    private double quantity_altin;
+    private double quantity;
 
-    public Altin(AltinTuru altinTuru, double unitPrice_altin, String created_altin, double quantity_altin) {
+    public Altin(AltinTuru altinTuru, double unitPrice, String created_altin, double quantity) {
         this.altinTuru = altinTuru;
-        this.unitPrice_altin = unitPrice_altin;
+        this.unitPrice = unitPrice;
         this.created_altin = created_altin;
-        this.quantity_altin = quantity_altin;
+        this.quantity = quantity;
     }
 
 
@@ -37,31 +37,31 @@ public class Altin {
         return altinTuru;
     }
 
-    public double getUnitPrice_altin() {
-        return unitPrice_altin;
+    public double getUnitPrice() {
+        return unitPrice;
     }
 
     public String getCreated_altin() {
         return created_altin;
     }
 
-    public double getQuantity_altin() {
-        return quantity_altin;
+    public double getQuantity() {
+        return quantity;
     }
 
     public void setAltinTuru(AltinTuru altinTuru) {
         this.altinTuru = altinTuru;
     }
 
-    public void setUnitPrice_altin(double unitPrice_altin) {
-        this.unitPrice_altin = unitPrice_altin;
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
     }
 
     public void setCreated_altin(String created_altin) {
         this.created_altin = created_altin;
     }
 
-    public void setQuantity_altin(double quantity_altin) {
-        this.quantity_altin = quantity_altin;
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
     }
 }
