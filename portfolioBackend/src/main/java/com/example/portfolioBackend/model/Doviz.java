@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Doviz {
 
+
     @Id
     private String id;
     private DovizTuru dovizTuru;
@@ -16,6 +17,7 @@ public class Doviz {
     private String created;
     private double quantity;
     
+
 
 
     public String getId() {
@@ -28,13 +30,12 @@ public class Doviz {
 
 
 
-    public Doviz(DovizTuru dovizTuru, double unitPrice, String created,double quantity) {
+    public Doviz(DovizTuru dovizTuru, double unitPrice, String created, double quantity ) {
         this.dovizTuru = dovizTuru;
         this.unitPrice = unitPrice;
         this.created = created;
         this.quantity = quantity;
-      
-       
+
 
     }
 
@@ -71,6 +72,8 @@ public class Doviz {
         this.quantity = quantity;
     }
    
-    
+
+
+
 
 }
