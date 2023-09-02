@@ -10,16 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.portfolioBackend.model.Altin;
 import com.example.portfolioBackend.service.AltinService;
-
 import lombok.AllArgsConstructor;
-@RestController
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/altin")
 @AllArgsConstructor
+@RestController
+
 public class AltinController {
     private final AltinService AltinService;
 
-   @GetMapping
+    @GetMapping
     public List<Altin> fetchAllAltin(){
         return AltinService.getAllAltin();
     }
@@ -27,5 +30,3 @@ public class AltinController {
     public void addToAltin(@RequestBody Altin request) {
         AltinService.addToAltin(request);
     }
-
-}
