@@ -1,18 +1,15 @@
-
 package com.example.portfolioBackend.controller;
-
 import com.example.portfolioBackend.model.Doviz;
 import com.example.portfolioBackend.service.DovizService;
-
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
-@RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/doviz")
 @AllArgsConstructor
+@RestController
+
 public class DovizController {
     private final DovizService dovizService;
 
