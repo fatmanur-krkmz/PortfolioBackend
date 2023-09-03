@@ -1,64 +1,66 @@
 package com.example.portfolioBackend.model;
-import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Data;
 
 
 @Data
 @Document
+
 public class Altin {
 
     @Id
-    private String id_altin;
-    private AltinTuru altinTuru;
+    private String id;
+    private AltinTuru tur;
     private double unitPrice;
-    private String created_altin;
+    private String created;
     private double quantity;
 
-    public Altin(AltinTuru altinTuru, double unitPrice, String created_altin, double quantity) {
-        this.altinTuru = altinTuru;
+    public Altin(AltinTuru tur, double unitPrice, String created, double quantity) {
+        this.tur = tur;
         this.unitPrice = unitPrice;
-        this.created_altin = created_altin;
+        this.created = created;
         this.quantity = quantity;
     }
 
 
 
 
-    public String getId_altin() {
-        return id_altin;
+    public String getId() {
+        return id;
     }
 
-    public void setId_altin(String id_altin) {
-        this.id_altin = id_altin;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public AltinTuru getAltinTuru() {
-        return altinTuru;
+    public AltinTuru getTur() {
+        return tur;
     }
 
     public double getUnitPrice() {
         return unitPrice;
     }
 
-    public String getCreated_altin() {
-        return created_altin;
+    public String getCreated() {
+        return created;
     }
 
     public double getQuantity() {
         return quantity;
     }
 
-    public void setAltinTuru(AltinTuru altinTuru) {
-        this.altinTuru = altinTuru;
+    public void setTur(AltinTuru tur) {
+        this.tur = tur;
     }
 
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
     }
 
-    public void setCreated_altin(String created_altin) {
-        this.created_altin = created_altin;
+    public void setCreated(String created) {
+        this.created = created;
     }
 
     public void setQuantity(double quantity) {

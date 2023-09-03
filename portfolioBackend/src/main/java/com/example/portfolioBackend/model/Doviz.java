@@ -1,7 +1,8 @@
 package com.example.portfolioBackend.model;
-import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Data;
 
 
 
@@ -12,7 +13,7 @@ public class Doviz {
 
     @Id
     private String id;
-    private DovizTuru dovizTuru;
+    private DovizTuru tur;
     private double unitPrice;
     private String created;
     private double quantity;
@@ -30,8 +31,8 @@ public class Doviz {
 
 
 
-    public Doviz(DovizTuru dovizTuru, double unitPrice, String created, double quantity ) {
-        this.dovizTuru = dovizTuru;
+    public Doviz(DovizTuru tur, double unitPrice, String created, double quantity ) {
+        this.tur = tur;
         this.unitPrice = unitPrice;
         this.created = created;
         this.quantity = quantity;
@@ -40,12 +41,12 @@ public class Doviz {
     }
 
 
-    public DovizTuru getDovizTuru() {
-        return dovizTuru;
+    public DovizTuru getTur() {
+        return tur;
     }
 
-    public void setDovizTuru(DovizTuru dovizTuru) {
-        this.dovizTuru = dovizTuru;
+    public void setTur(DovizTuru tur) {
+        this.tur = tur;
     }
 
     public double getUnitPrice() {
