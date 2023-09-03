@@ -30,3 +30,4 @@ public class AltinController {
     public void addToAltin(@RequestBody Altin request) {
         AltinService.addToAltin(request);
     }
+}
