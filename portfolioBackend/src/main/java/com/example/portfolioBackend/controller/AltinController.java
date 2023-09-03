@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.portfolioBackend.model.Altin;
 import com.example.portfolioBackend.service.AltinService;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.*;
-import java.util.List;
+
 
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/altin")
