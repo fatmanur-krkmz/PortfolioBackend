@@ -25,6 +25,4 @@ public class AltinService {
     public void deleteAltin(String id) {
         altinRepository.deleteById(id);
     }
-
-
 }

@@ -1,5 +1,4 @@
 version: "3.8"
-  http://localhost:5000/posts
 services:
   mongodb:
     image: mongo
